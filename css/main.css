@@ -166,3 +166,104 @@ nav a:focus {
   background-color: #968DFF;
   color: white;
 }
+
+ul li{
+  text-align:center;
+}
+
+.im{
+  font-size:1em;
+}
+
+@media screen and (max-width:43.74em){
+  .container{
+    padding:0 5%;
+  }
+
+  ul li{
+    padding-top:1.5em;
+  }
+
+  .sm{
+    justify-content:space-evenly;
+    display:flex;
+    padding-top:1.5em;
+  }
+
+  nav a,
+  nav a:link,
+  nav a:visited{
+    font-size:4em;
+  }
+
+}
+
+@media screen and (min-width:43.75em){
+
+  .container{
+    padding:3%;
+  }
+
+  ul{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-gap:1em;
+  }
+
+  nav a,
+  nav a:link,
+  nav a:visited{
+    font-size:2.5em;
+  }
+
+  .sm{
+    justify-content:center;
+    display:flex;
+    padding:1.5em;
+  }
+
+  .sm a{
+    margin:0.1em;
+  }
+}
+
+@media screen and (min-width:62.5em){
+
+  .container{
+    padding-left:5%;
+  }
+
+  ul{
+    display:flex;
+    justify-content:space-between;
+  }
+
+  .sm{
+    margin-left:90%;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 1fr;
+  }
+
+  .sm a:nth-child(3){
+    grid-row:1;
+  }
+
+  .sm a:nth-child(4){
+    grid-row:1;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body{
+    background-color: #E0FF8D;
+  }
+
+nav a,
+nav a:link,
+nav a:visited {
+  background-color:#968DFF;
+  color:white;
+}
+
+}
